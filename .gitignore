@@ -1,0 +1,17 @@
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+.agents/
+skills-lock.json
+node_modules/
+dist/
+build/
+.env
