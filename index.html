@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="src/css/styles.css">
 </head>
 <body>
 
@@ -19,7 +19,9 @@
   <!-- NAV -->
   <!-- ═══════════════════════════════════════════════════ -->
   <nav class="nav" id="nav">
-    <a href="#hero" class="nav__brand">Orquídea Tés</a>
+    <a href="#hero" class="nav__brand">
+      <img src="assets/img/brand/orquidea-logo.webp" alt="Orquídea Tés" height="40">
+    </a>
     <ul class="nav__links">
       <li><a href="#marcas">Marcas</a></li>
       <li><a href="#orquidea">Portafolio</a></li>
@@ -50,14 +52,14 @@
     <div class="trust__inner reveal">
       <p class="section-label">Confían en nosotros</p>
       <div class="trust__grid">
-        <span class="trust__logo">Ara</span>
-        <span class="trust__logo">Pricesmart</span>
-        <span class="trust__logo">Grupo Éxito</span>
-        <span class="trust__logo">Café Quindío</span>
+        <img src="assets/img/logos/ara.svg" alt="Ara" class="trust__img">
+        <img src="assets/img/logos/pricesmart.svg" alt="Pricesmart" class="trust__img">
+        <img src="assets/img/logos/grup-exito.svg" alt="Grupo Éxito" class="trust__img">
+        <img src="assets/img/logos/cafe-quindio.png" alt="Café Quindío" class="trust__img">
         <span class="trust__logo">Masaya</span>
         <span class="trust__logo">Viajero Hostels</span>
-        <span class="trust__logo">Oxxo</span>
-        <span class="trust__logo">Tostao</span>
+        <img src="assets/img/logos/oxxo-logo.svg" alt="Oxxo" class="trust__img">
+        <img src="assets/img/logos/tostao.png" alt="Tostao" class="trust__img">
       </div>
     </div>
   </section>
@@ -310,12 +312,14 @@
   <!-- ═══════════════════════════════════════════════════ -->
   <footer class="footer">
     <div class="footer__inner">
-      <p class="footer__brand">Orquídea Tés</p>
+      <p class="footer__brand">
+        <img src="assets/img/brand/orquidea-logo.webp" alt="Orquídea Tés" height="30">
+      </p>
       <p class="footer__contact">contacto@orquideateas.com</p>
       <p class="footer__copy">&copy; 2026 Orquídea Tés. Todos los derechos reservados.</p>
     </div>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="src/js/main.js"></script>
 </body>
 </html>

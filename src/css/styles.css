@@ -323,6 +323,12 @@ img {
   letter-spacing: -0.02em;
 }
 
+.trust__img {
+  max-height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
 /* ── BRANDS SECTION ────────────────────────────────── */
 .brands {
   padding: var(--space-2xl) var(--space-md);
