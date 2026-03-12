@@ -286,6 +286,43 @@ img {
   50% { opacity: 1; transform: scaleY(1); }
 }
 
+/* ── TRUST SECTION ─────────────────────────────────── */
+.trust {
+  padding: var(--space-md) var(--space-md) var(--space-2xl);
+  background: var(--cream);
+  text-align: center;
+}
+
+.trust__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.trust__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-lg);
+  margin-top: var(--space-md);
+  opacity: 0.6;
+  filter: grayscale(1);
+  transition: opacity var(--transition), filter var(--transition);
+}
+
+.trust__grid:hover {
+  opacity: 1;
+  filter: grayscale(0);
+}
+
+.trust__logo {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--teal-deep);
+  letter-spacing: -0.02em;
+}
+
 /* ── BRANDS SECTION ────────────────────────────────── */
 .brands {
   padding: var(--space-2xl) var(--space-md);
@@ -584,6 +621,85 @@ img {
   text-align: center;
 }
 
+/* ── KITS SECTION ──────────────────────────────────── */
+.kits {
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-2xl);
+  border-top: 1px solid rgba(43, 74, 66, 0.08);
+}
+
+.kits__title {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  color: var(--teal-deep);
+  text-align: center;
+  margin-bottom: var(--space-xl);
+}
+
+.kits__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+.kit-card {
+  background: var(--white-true);
+  padding: var(--space-md);
+  border-radius: 8px;
+  border: 1px solid rgba(43, 74, 66, 0.05);
+  text-align: center;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.kit-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+}
+
+.kit-card--featured {
+  border: 2px solid var(--blush);
+  position: relative;
+}
+
+.kit-card--featured::after {
+  content: 'Más pedido';
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--blush);
+  color: var(--teal-deep);
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 2px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.kit-card__name {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--teal-muted);
+  margin-bottom: var(--space-xs);
+}
+
+.kit-card__price {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--teal-deep);
+  margin-bottom: var(--space-sm);
+}
+
+.kit-card__desc {
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: var(--teal-muted);
+  line-height: 1.5;
+}
+
 /* ── Button ────────────────────────────────────────── */
 .btn {
   display: inline-block;
@@ -687,6 +803,10 @@ img {
     gap: var(--space-md);
   }
 
+  .kits__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .hoteleria__grid {
     grid-template-columns: 1fr;
   }
@@ -733,5 +853,13 @@ img {
   .btn {
     width: 100%;
     text-align: center;
+  }
+
+  .kits__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trust__grid {
+    gap: var(--space-md);
   }
 }
